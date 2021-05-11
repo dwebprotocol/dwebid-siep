@@ -1,0 +1,34 @@
+{
+  "name": "@dwebid/simple-identity-exchange-protocol",
+  "version": "1.0.0",
+  "description": "Protocol for giving write access of a dWeb-based identity document from one device to another.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "protobuf": "protoc schema.proto -o messages.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dwebprotocol/dwebid-siep.git"
+  },
+  "keywords": [
+    "dweb"
+  ],
+  "author": "Jared Rice Sr. <jared@peepsx.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dwebprotocol/dwebid-siep/issues"
+  },
+  "homepage": "https://dwebx.org",
+  "dependencies": {
+    "@ddatabase/crypto": "^1.0.0",
+    "noise-protocol": "^3.0.1",
+    "simple-handshake": "^3.0.0",
+    "simple-message-channels": "^1.2.1",
+    "sodium-native": "^3.2.1",
+    "varint": "^6.0.0",
+    "xsalsa20-universal": "^1.0.0"
+  }
+}

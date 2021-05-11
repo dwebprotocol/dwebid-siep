@@ -1,0 +1,33 @@
+message NoisePayload {
+  required bytes nonce = 1;
+}
+
+message Open {
+  required bytes deviceId = 1;
+  optional bytes capability = 2;
+}
+
+message Verify {
+  required uint64 type = 1;
+}
+
+message Prove {
+  required bytes secret = 1;
+}
+
+message ReleaseSeed {
+  required bytes seed = 1;
+}
+
+message WantKey {
+  required bytes identifier = 1;
+}
+
+message ProvideKey {
+  required bytes identifier = 1;
+  required bytes diffKey = 2;
+}
+
+message Close {
+required bytes deviceId = 1;
+}
